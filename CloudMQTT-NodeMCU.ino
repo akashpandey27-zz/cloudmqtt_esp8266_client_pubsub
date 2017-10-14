@@ -3,9 +3,9 @@
 
 // Update these with values suitable for your network.
 
-const char* ssid = "CloudThat_IoT_Lab2_2.4GHz";
-const char* password = "ghjklasdf1*&";
-const char* mqtt_server = "m10.cloudmqtt.com";
+const char* ssid = "..........";
+const char* password = ".............";
+const char* mqtt_server = ".............";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -91,7 +91,7 @@ void reconnect() {
   while (!client.connected()) {
     Serial.print("Attempting MQTT connection...");
     // Attempt to connect
-    if (client.connect("ESP8266Client", "ryflwpvz", "IR6JdpAccm2F")) {
+    if (client.connect("ESP8266Client", "[USERNAME]", "[PASSWORD]")) {
       Serial.println("connected");
       // Once connected, publish an announcement...
      // client.publish("/cloudmqtt", "hello world");
